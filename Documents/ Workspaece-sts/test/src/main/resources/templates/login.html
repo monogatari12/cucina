@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link th:href="@{/css/box.css}"rel="stylesheet">
+<title>ログイン</title>
+</head>
+<body>
+	<div class="menu">
+        <label for="menu_bar01">≡</label>
+        <input type="checkbox" id="menu_bar01" 
+        class="accordion"/>
+        <ul id="links01">
+            <li><a href="/">Cucinaトップ</a></li>
+            <li><a href="/login">ログイン</a></li>
+            <li><a href="">カテゴリ一覧</a></li>
+            <li><a href="">お気に入りレシピ</a></li>
+            <li><a href="">ヘルプ</a></li>
+        </ul>
+    </div>
+
+    <h1>ログイン</h1>
+    <div id="form">
+        <form action="" method="POST">
+            <label for="rendou">ユーザーネーム*</label>
+            <input id="rendou" type="text" 
+            placeholder="４ケタの数字を入力" name="UserName">
+            <br>
+            <label for="password">パスワード*</label>
+            <input id="password" type="password" 
+            placeholder="入力してください" name="password">
+            <br>
+            <input type="submit" value="ログイン">
+            <input type="submit" value="新規登録">
+        </form>
+        <p>パスワードを忘れた方は<a href="">コチラ</a></p>
+        <h5>*は必須項目です。</h5>
+    </div>
+
+</body>
+</html>
