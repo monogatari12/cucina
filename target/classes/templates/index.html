@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<!-- <html xmlns:th="http://www.thymeleaf.org"> -->
+<head>
+<meta http-equiv="content-type" charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link th:href="@{/css/data.css}"rel="stylesheet">
+<!-- <link th:href="@{/css/login.css}"rel="stylesheet"> -->
+<title>Cucina(クチーナ)</title>
+</head>
+<body>
+	<div id="main-box1">
+        <header>  
+            <form method="GET" action="#"class="searth_container">
+                <input type="text" size="25" placeholder="l">
+                <input type="submit" value="🔍">
+            </form>
+            <div class="menu">
+                <label for="menu_bar01">≡</label>
+                <input type="checkbox" id="menu_bar01" class="accordion"/>
+                <ul id="links01">
+                    <li><a href="/login">
+                    ようこそ!<h4 th:text="${name}">ゲストさんログイン</h4></a></li>
+                    <li><a href="">カテゴリ一覧</a></li>
+                    <li><a href="">お気に入りレシピ</a></li>
+                    <li><a href="">ヘルプ</a></li>
+                </ul>
+                
+            </div>
+        </header>
+        <main>
+            <h1><a href="#">Cucina</a></h1>
+            <div class="ribbon1">
+                <h2>line up</h2>
+            </div>
+            <ul>
+                <li><a href="">今月の投稿レシピ</a></li>
+                <li><a href="">お助け時短レシピ</a></li>
+                <li><a href="">定番レシピ</a></li>
+            </ul>
+            <h3>今が旬！オススメレシピ</h3>
+            <div class="topImg1" >
+                <a href="/recipe">
+                <img src="image/メロンケーキ.JPG"></a>
+                <!-- <img src="image/イトマキエイの塩焼き.jpg"> -->
+        
+                <img src="image/ブッシュ・ド・ノエル.jpg">
+
+                <img src="image/シラウオの刺し身.jpg">
+                <img src="image/マッシュルームスープ.jpg">
+            </div>
+            <h3>定番デザート</h3>
+            <div class="topImg2">
+                <img src="image/フルーツミルク.jpg">
+                <img src="image/ホットミルク.jpg">
+                <img src="image/イチゴゼリー.jpg">
+                <img src="image/ナツメ元宵.jpg">
+            </div>
+            <p><a href="#">page top</a></p>
+
+        </div>
+    
+		</main>
+	</body>
+</html>
